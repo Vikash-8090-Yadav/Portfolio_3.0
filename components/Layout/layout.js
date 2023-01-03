@@ -1,7 +1,6 @@
 
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
-
-const Layout = ({ children }) => {
+const Layout = ({ children}) => {
   return (
     <>
     {children}
