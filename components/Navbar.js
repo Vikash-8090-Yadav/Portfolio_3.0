@@ -8,7 +8,7 @@ const Navbar = () => {
         <>
             <div className = "flex justify-between items-center w-full h-20 fixed px-6">
 
-                <h1 className = "text-3xl font-signature ml-2">Mahak Garg</h1>
+                <h1 className = "text-3xl font-signature ml-2">Vikash Kumar Yadav</h1>
 
                 <ul className = "hidden md:flex">
                     <li className = "px-4 cursor-pointer font-medium md:hover:text-gray-400 md:hover:scale-125 duration-500">
