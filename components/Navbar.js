@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Link from 'next/link';
 import {FaBars, FaTimes} from 'react-icons/fa'
+import { useWeb3Modal, Web3Button, Web3NetworkSwitch } from '@web3modal/react'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -18,8 +19,10 @@ const Navbar = () => {
                     <li className = "px-4 cursor-pointer font-medium md:hover:text-gray-400 md:hover:scale-125 duration-500">Project</li>
                     <li className = "px-4 cursor-pointer font-medium md:hover:text-gray-400 md:hover:scale-125 duration-500">Experience</li>
                 </ul>
-
-                <button class="bg-blue-500 text-white px-5 py-2 rounded-md text-xl font-bold mr-6">Connect Wallet</button>
+                
+                <Web3Button class="text-white  rounded-md text-xl font-bold mr-6 height-100" balance="show" icon="hide" label="Connect Wallet" /> 
+                
+                {/* <button class="bg-blue-500 text-white px-5 py-2 rounded-md text-xl font-bold mr-6">Connect Wallet</button> */}
 
                 <div onClick={() => setNav(!nav)} className = "cursor-pointer pr-4 z-10 text-gray-400 md:hidden">
                     {
