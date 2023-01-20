@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
 import { ethers } from 'ethers';
+import ProfilePic from "../public/Images/devImg.png"
 // import nftcntrct from "../Backened/artifacts/contracts/Lock.sol/VikashPR.json"
 import nftcntrct from "./Lock.sol/VikashPr.json";
 
@@ -56,7 +57,7 @@ const Home = () => {
               I'm a 
               <Typewriter className = "my-1 text-6xl text-yellow-300"
                 options={{
-                  strings: ["Frontend Developer", "Graphic Designer"],
+                  strings: ["Web3 Developer","Frontend Developer", "UI/UX Designer","Smart Contract Dev"],
                   autoStart: true,
                   loop: true,
                 }}
@@ -77,7 +78,7 @@ const Home = () => {
           </div>
 
           <div className = "flex flex-col items-center justify-center">
-            <Image src = "/Images/devImg.png" height="100" width="400" className = "md:hover:scale-125 duration-500 max-md:pt-10 ml-28 pr-0 " />
+            <Image src = {ProfilePic} height="100" width="400" className = "md:hover:scale-125 duration-500 max-md:pt-10 ml-28 pr-0 " />
             <button onClick = {profileImg} className="group text-white w-fit px-6 py-3 mt-0 mb-10 flex items-center rounded-md bg-gradient-to-r from-blue-500 to-cyan-500 cursor-pointer">
                 <span className="md:group-hover:-rotate-90 duration-300">
                   <AiOutlineArrowLeft size={25} className="mr-2" />
