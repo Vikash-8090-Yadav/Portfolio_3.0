@@ -140,5 +140,5 @@ a {
 }
 
 .navbar.active {
-  background: linear-gradient(135deg, #000, #0000ff, #fff);
+  background:linear-gradient(to right bottom, #2d225f, #1a275e, #002b5b, #00385e, #004255, #004a46, #1a4f38);
 }
