@@ -3,24 +3,20 @@ import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
 import { ethers } from 'ethers';
-import nftcntrct from "../Backened/artifacts/contracts/Lock.sol/VikashPR.json"
+// import nftcntrct from "../Backened/artifacts/contracts/Lock.sol/VikashPR.json"
+import nftcntrct from "./Lock.sol/VikashPr.json";
+
 const cntaddress = "0x4854f32a91981F0B9301F147Eaad7d49Fb8d828D";
 let walletprovider;
-if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined')
-{
+if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
     // we are in the browser and metamask is running
     const {ethereum} =window;
     walletprovider = new  ethers.providers.Web3Provider(
       ethereum
     )
-}
-else
-{
+} else {
   
 }
-
-
-
 
 async function resumeImg(){
 
@@ -53,7 +49,7 @@ async function profileImg(){
 const Home = () => {
   return (
     <>
-      <div name="hero" className="h-screen max-md:h-full w-full justify-center bg-gradient-to-br from-[#690a4a] via-[#100e2d] to-[#08624b]">
+      <div name="hero" className="h-screen max-md:h-full w-full justify-center">
         <div className="max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-4 md:flex-row">
           <div className = "flex flex-col max-md:items-center justify-center h-full">
             <h2 className = "sm:text-5xl font-bold flex flex-col max-md:items-center justify-center">

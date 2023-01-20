@@ -1,18 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import Navbar from '../components/Navbar'
-import Hero from "../components/Hero.js"
+import Hero from '../components/Hero'
 import SocialLinks from '../components/SocialLinks'
+import Skills from '../components/Skills'
+import Project from '../components/Project'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
-
 
 export default function Home() {
   return (
-    <div>
-      {/* <Navbar /> */}
+    <div className = "bg-gradient-to-br from-[#690a4a] via-[#100e2d] to-[#08624b]">
       <Hero />
       <SocialLinks />
+      <Skills />
+      <Project />
+      <Contact />
+      <Footer />
     </div>
   )
 }
