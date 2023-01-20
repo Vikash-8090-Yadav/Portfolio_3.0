@@ -4,7 +4,7 @@ import SocialLinks from '../components/SocialLinks'
 import Skills from '../components/Skills'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
