@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-
+import Coffee from "../public/Images/Coffee.png"
 const Contact = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const Contact = () => {
         <div className = "flex flex-col p-4 justify-center max-w-screen-lg mx-auto ">
             <div className = "pb-8">
                 <p className = "text-4xl font-bold text-center flex items-center justify-center">Buy me a
-                  <Image src = "/Images/Coffee.png" height="50" width="50" className = "mx-3 transform flip-horizontal" />
+                  <Image src = {Coffee} height="50" width="50" className = "mx-3 transform flip-horizontal" />
                 </p>
                 <p className = "py-6 text-center text-xl">Submit the form below to buy me a coffee.</p>
             </div>
