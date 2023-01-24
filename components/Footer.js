@@ -53,7 +53,7 @@ const Footer = () => {
 
   return (
     <div>
-      <ul className="flex justify-center bg-gray-900">
+      <ul className="flex justify-center bg-gray-800 text-white pb-1">
         {links.map(({ id, child, href, style, download }) => (
           <li key = {id} className = {"flex justify-between p-4" + " " + style}>
             <a href = {href} className = "flex justify-between" download = {download} target = "_blank">
