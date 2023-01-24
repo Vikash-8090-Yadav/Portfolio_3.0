@@ -120,25 +120,44 @@ a {
   }
 }
 
-/* Flip Coffee Image */
-
-.flip-horizontal {
-  transform: scaleX(-1);
-}
-
 /* Change Navbar Background on scroll */
 
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 80px;
+  padding: 0 1rem;
+  color: #fff;
   position: fixed;
-  padding: 0 50px;
   z-index: 10000;
 }
 
 .navbar.active {
-  background:linear-gradient(to right bottom, #2d225f, #1a275e, #002b5b, #00385e, #004255, #004a46, #1a4f38);
+  background:linear-gradient(to right bottom,#000, rgb(34, 34, 34), rgb(66, 66, 66), rgba(17,24,39,1));
+}
+
+/* Developer Image animation */
+
+.img {
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Flip Coffee Image */
+
+.flip-horizontal {
+  transform: scaleX(-1);
 }
