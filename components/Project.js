@@ -9,7 +9,7 @@ const Project = () => {
 
   return (
     <>
-      <div name = "projects" className = "w-full py-5">
+      <div  className = "w-full py-5">
         <div className = "max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full border-gray-500">
           <div className = "pb-8">
             <p className = "text-4xl font-bold text-center mb-5 text-white">In Progress</p>
