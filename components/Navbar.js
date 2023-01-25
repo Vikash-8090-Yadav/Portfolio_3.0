@@ -8,7 +8,7 @@ const Navbar = () => {
     const [navBar, setNavBar] = useState(false);
 
     const changeBackground = () => {
-        if(window.scrollY >= 80) {
+        if(window.scrollY >= 1) {
             setNavBar(true);
         } else {
             setNavBar(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
 
                 <ul className = "hidden md:flex text-white">
                     {links.map(({id, link}) => (
-                        <li key = {id} className = "px-4 cursor-pointer font-medium md:hover:scale-125 duration-250 capitalize">
+                        <li key = {id} className = "px-4 cursor-pointer font-medium md:hover:scale-125 duration-300 capitalize">
                             <Link to={link} smooth duration={500}>{link}</Link>
                         </li>
                     ))}
