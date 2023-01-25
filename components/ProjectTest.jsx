@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import polygon from '../public/Images/Khaana_Khazana.jpg'
+import polygon from '../public/Images/resOrg.jpg'
 
+import SalDapp from '../public/Images/SalDapp.png'
+import Voting from '../public/Images/Voting.png'
+import Portfolio from '../public/Images/port.png'
 const ProjectT = () => {
 
   return (
@@ -15,13 +18,13 @@ const ProjectT = () => {
     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div class=" rounded-t-lg flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
         <div class =" imgProject Projectblock shadow-white shadow-2xl bg-gradient-to-b from-black to-gray-800">
-      <Image  src ={polygon} width ={500} height = {500} alt ="hero-image" className = " rounded-md duration-200 hover:scale-110 hover:overflow-hidden"/> 
+      <Image  src ={SalDapp} width ={490} height = {500} alt ="hero-image" className = " rounded-md duration-200 hover:scale-110 hover:overflow-hidden"/> 
       <div className = "flex items-center justify-center">
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl border-r-2">
-                          <Link href = "" target = "_blank">Code</Link>
+                          <Link href = "https://github.com/Vikash-8090-Yadav/HTM_SAL-dApp" target = "_blank">Code</Link>
                         </button>
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl">
-                          <Link href = "" target = "_blank">Demo</Link>
+                          <Link href = "http://sal-dapp.vercel.app/" target = "_blank">Demo</Link>
                         </button>
                       </div>
         </div> 
@@ -58,7 +61,8 @@ const ProjectT = () => {
             <h2 class="text-yellow-400 max-md:text-3xl text-5xl font-bold flex flex-col max-md:items-center justify-center sm:leading-none max-w-lg mb-6">
               Voting Dapp
             </h2>
-            <p class="text-white text-base md:text-lg"> Lorem Ipsum is so cool and awesome to act and so cool to think. And very awesome to eat and talk.
+            <p class="text-white text-base md:text-lg"> A Blockchain-based voting system that aims to address many of the problems faced in today’s elections and promises new opportunities, from securing transparency to making the voting process more accessible, affordable, and safe.
+
             </p>
           </div>
           <div class="flex items-center space-x-3">
@@ -72,13 +76,13 @@ const ProjectT = () => {
           </div>
         </div>
         <div class =" imgProject Projectblock shadow-white shadow-2xl bg-gradient-to-b from-black to-gray-800">
-      <Image  src ={polygon} width ={500} height = {500} alt ="hero-image" className = "rounded-md duration-200 hover:scale-110 hover:overflow-hidden"/> 
+      <Image  src ={Voting} width ={500} height = {500} alt ="hero-image" className = "rounded-md duration-200 hover:scale-110 hover:overflow-hidden"/> 
       <div className = "flex items-center justify-center">
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl border-r-2">
-                          <Link href = "" target = "_blank">Code</Link>
+                          <Link href = "https://github.com/Vikash-8090-Yadav/VOTE_3.0" target = "_blank">Code</Link>
                         </button>
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl">
-                          <Link href = "" target = "_blank">Demo</Link>
+                          <Link href = "https://vote-3-0-1c0aa9.spheron.app/" target = "_blank">Demo</Link>
                         </button>
                       </div>
         </div> 
@@ -92,10 +96,10 @@ const ProjectT = () => {
       <Image  src ={polygon} width ={500} height = {500} alt ="hero-image" className = "rounded-md duration-200 hover:scale-110 hover:overflow-hidden"/> 
       <div className = "flex items-center justify-center">
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl border-r-2">
-                          <Link href = "" target = "_blank">Code</Link>
+                          <Link href = "https://github.com/Vikash-8090-Yadav/Future_readyTalent" target = "_blank">Code</Link>
                         </button>
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl">
-                          <Link href = "" target = "_blank">Demo</Link>
+                          <Link href = "https://bafybeicxv2yoateffi4q2pvszdla5nc4qq7vvipnjt6q3b45pxjr2qlngm.ipfs.sphn.live/" target = "_blank">Demo</Link>
                         </button>
                       </div>
         </div> 
@@ -146,13 +150,13 @@ const ProjectT = () => {
           </div>
         </div>
         <div class =" imgProject Projectblock shadow-white shadow-2xl bg-gradient-to-b from-black to-gray-800">
-      <Image  src ={polygon} width ={500} height = {500} alt ="hero-image" className = "rounded-md duration-200 hover:scale-110 hover:overflow-hidden"/> 
+      <Image  src ={Portfolio} width ={500} height = {500} alt ="hero-image" className = "rounded-md duration-200 hover:scale-110 hover:overflow-hidden"/> 
       <div className = "flex items-center justify-center">
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl border-r-2">
                           <Link href = "" target = "_blank">Code</Link>
                         </button>
                         <button className = "w-1/2 px-6 py-3 duration-200 hover:scale-110 text-xl">
-                          <Link href = "" target = "_blank">Demo</Link>
+                          <Link href = "https://vikash-portfolio-3-0.vercel.app/" target = "_blank">Demo</Link>
                         </button>
                       </div>
         </div> 
