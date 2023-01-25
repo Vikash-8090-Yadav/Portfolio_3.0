@@ -76,6 +76,7 @@ const Contact = () => {
  await  Modal.error({
     title: 'Oops transaction failed!',
     content: 'please double check the amount  and try again ,Dont forget to check the Console for better underswtanding',
+    
   
   });
 }
