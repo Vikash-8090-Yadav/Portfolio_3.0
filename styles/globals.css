@@ -141,6 +141,50 @@ a {
    border-radius: 50%;
 }
 
-.skill-cnt{
-  
+.Projectblock{
+  animation: updown 3s linear infinite;
+
 }
+
+@keyframes updown{
+  0%{
+    transform: translateY(-20px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(-20px);
+  }
+}
+
+.imgProject{
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown{
+  0%{
+    transform: translateY(-20px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(-20px);
+  }
+}
+
+.ProjectText {
+  animation: slideRight 3s linear infinite;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+
