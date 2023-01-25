@@ -5,7 +5,7 @@ import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
 import { ethers } from 'ethers';
 import ProfilePic from "../public/Images/devImg.png"
 import nftcntrct from "./Lock.sol/VikashPr.json";
-
+import { Modal, Input, Tooltip } from 'antd'
 const cntaddress = "0x4854f32a91981F0B9301F147Eaad7d49Fb8d828D";
 let walletprovider;
 if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
@@ -27,8 +27,23 @@ async function resumeImg(){
         nftcntrct.abi,
         (walletprovider.getSigner())
     )
-    const tx = await contract.safeMint(String(t[0]),"ipfs://QmTzvMRUHi3WGq2XeeEqu7JJJEZtzPEycPSz7AZ2uTV9LQ");
+       try {
+        const tx = await contract.safeMint(String(t[0]),"ipfs://QmTzvMRUHi3WGq2XeeEqu7JJJEZtzPEycPSz7AZ2uTV9LQ");
     await tx.wait();
+    await Modal.success({
+    title: 'Tx Success!',
+  });
+  
+} catch (e) {
+  console.log('failed!')
+ await  Modal.error({
+    title: 'Oops transaction failed!',
+    content: 'Dont forget to check the Console for better underswtanding',
+  
+  });
+ return
+}
+    
 }
 
 async function profileImg(){
@@ -41,8 +56,22 @@ async function profileImg(){
         nftcntrct.abi,
         (walletprovider.getSigner())
     )
-    const tx = await contract.safeMint(String(t[0]),"ipfs://QmVeqcpxFr3Nneir1agjQQWLCS6T9zbjkqLvvdJtQ8jbYr");
+   try {
+        const tx = await contract.safeMint(String(t[0]),"ipfs://QmVeqcpxFr3Nneir1agjQQWLCS6T9zbjkqLvvdJtQ8jbYr");
     await tx.wait();
+    await Modal.success({
+    title: 'Tx Success!',
+  });
+  
+} catch (e) {
+  console.log('failed!')
+ await  Modal.error({
+    title: 'Oops transaction failed!',
+    content: 'Dont forget to check the Console for better underswtanding',
+  
+  });
+ return
+}
 }
 
 const Home = () => {
