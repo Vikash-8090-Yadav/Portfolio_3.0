@@ -7,7 +7,7 @@ const ProjectT = () => {
 
   return (
     <>
-    <div id="About">
+    <div name = "projects">
 <div class="w-full my-20 z-50   ">
 <div className = "pb-8">
             <p className = "text-4xl font-bold text-center mb-5 text-white">Projects</p>
