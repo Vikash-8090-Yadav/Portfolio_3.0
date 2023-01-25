@@ -1,7 +1,83 @@
 import React from 'react'
 import Image from "next/image";
 import Coffee from "../public/Images/Coffee.png"
+import { Button } from "antd";
+import { Modal, Input, Tooltip } from 'antd'
+import { ethers } from 'ethers';
+import Web3Modal from 'web3modal'
+import { ConfigProvider } from 'antd';
+import { useState } from 'react'
 const Contact = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [polygonAmount, setPolygonAmount] = useState(0);
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const updateAmount = (e) => {
+    setPolygonAmount(e.target.value);
+  };
+
+  const connectToMetamask = async () => {
+    const web3Modal = new Web3Modal()
+    const connection = await web3Modal.connect()
+    const provider = new ethers.providers.Web3Provider(connection)
+    const signer = provider.getSigner()
+    const address = await signer.getAddress()
+    if (address && signer && provider) {
+      requestPolygonTransaction(signer, address, provider)
+    } else {
+      console.log("ERROR couldn't connect to metamask")
+    }
+  }
+
+  const requestPolygonTransaction = async (signer, address, provider) => {
+    alert(address);
+    // check validity of addresses
+    if (
+      !ethers.utils.isAddress(address) 
+    ) {
+      console.log('ERROR invalid wallet addresses provided')
+    await  Modal.error({
+    title: 'Oops transaction failed!',
+    content: 'please double check the amount and try again',
+  
+  });
+      return
+    }
+  
+
+    const transactionParameters = {
+      from: address ,
+      
+      
+      to: "0xeE467Cae5d6461FB1783c15bD9Da43d63048ffb0", 
+      data: '0x',
+      value: ethers.utils.parseEther(polygonAmount),
+      gasLimit: ethers.utils.hexlify(210000),
+      gasPrice: ethers.utils.hexlify(parseInt(await provider.getGasPrice())),
+    }
+
+    try {
+  const transaction = await signer.sendTransaction(transactionParameters);
+  setIsModalOpen(false);
+  await Modal.success({
+    title: 'Tx Success!'
+  });
+} catch (e) {
+  console.log('failed!')
+ await  Modal.error({
+    title: 'Oops transaction failed!',
+    content: 'please double check the amount and try again',
+  
+  });
+}
+  }
   return (
     <>
       <div name = "contact" className = "w-full p-4">
@@ -18,8 +94,29 @@ const Contact = () => {
                     <input type = "text" name = "name" placeholder = "Enter your name" className = "p-2 bg-transparent border-2 border-white rounded-md focus:outline-none text-white" />
                     <input type = "email" name = "email" placeholder = "Enter your email" className = "my-6 p-2 bg-transparent border-2 border-white rounded-md focus:outline-none text-white" />
                     <textarea placeholder = "Enter your Message" name = "message" rows = "8" className = "p-2 bg-transparent border-2 border-white rounded-md focus:outline-none text-white" />
-
-                    <button className = "px-6 py-3 bg-gradient-to-b from-cyan-500 to-blue-500 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-150 text-white font-semibold">Buy me a Coffee</button>
+                    <Button  className = "px-6 py-6 bg-gradient-to-b from-cyan-500 to-blue-500 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-150 text-white  font-semibold" type="primary"   onClick={() => setIsModalOpen(true)}>Buy me a Coffee</Button>
+                    <Modal
+                  title="Salaray"
+                  visible={isModalOpen}
+                  onOk={handleOk}
+                  onCancel={handleCancel}
+                  footer={[
+                  <button className = "px-6 py-3 bg-gradient-to-b from-cyan-500 to-blue-500 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-150 text-white font-semibold" key="submit" type="primary" onClick={connectToMetamask}>
+                  Submit
+                  </button>,
+                  ]}
+                  >
+                  
+                  
+                <p>Enter amount in polygon MATIC youd like to send</p>
+                  <Input
+                  prefix=""
+                  value={polygonAmount}
+                  onChange={updateAmount}
+                  placeholder="50"
+                  suffix="matic"
+                />
+            </Modal>
                 </form>
             </div>
         </div>
