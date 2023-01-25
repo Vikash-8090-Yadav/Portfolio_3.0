@@ -4,13 +4,13 @@ import Coffee from "../public/Images/Coffee.png"
 const Contact = () => {
   return (
     <>
-      <div name = "contact" className = "w-full p-4 bg-gradient-to-br from-[#08624b] to-[#690a4a]">
+      <div name = "contact" className = "w-full p-4">
         <div className = "flex flex-col p-4 justify-center max-w-screen-lg mx-auto ">
             <div className = "pb-8">
-                <p className = "text-4xl font-bold text-center flex items-center justify-center text-white">Buy me a
+                <p className = "text-4xl font-bold text-center flex items-center justify-center">Buy me a
                   <Image src = {Coffee} height="50" width="50" className = "mx-3 transform flip-horizontal" />
                 </p>
-                <p className = "py-6 text-center text-xl text-white font-medium">Submit the form below to buy me a coffee.</p>
+                <p className = "py-6 text-center text-xl font-semibold">Submit the form below to buy me a coffee.</p>
             </div>
 
             <div className = "flex justify-center items-center">
