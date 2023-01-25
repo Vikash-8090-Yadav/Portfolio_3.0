@@ -39,7 +39,7 @@ const Skills = () => {
             
             
             <div className = " md:items-center max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[ 80]}>
+              <ChangingProgressProvider values = {[10,80,80,80,80]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -53,7 +53,7 @@ const Skills = () => {
             </div>
 
                         <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[90]}>
+              <ChangingProgressProvider values = {[10,90,90,90,90]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -66,7 +66,7 @@ const Skills = () => {
               </div>
             </div>
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[80]}>
+              <ChangingProgressProvider values = {[10,80,80,80,80]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -80,7 +80,7 @@ const Skills = () => {
 
             </div>
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[90]}>
+              <ChangingProgressProvider values = {[10,90,90,90,90]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -93,7 +93,7 @@ const Skills = () => {
               </div>
             </div>
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[80]}>
+              <ChangingProgressProvider values = {[10,80,80,80,80]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -106,7 +106,7 @@ const Skills = () => {
               </div>
             </div>
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[70]}>
+              <ChangingProgressProvider values = {[10,70,70,70,70]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -119,7 +119,7 @@ const Skills = () => {
               </div>
             </div>
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[70]}>
+              <ChangingProgressProvider values = {[10,70,70,70,70]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -132,7 +132,7 @@ const Skills = () => {
               </div>
             </div>
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[80]}>
+              <ChangingProgressProvider values = {[10,80,80,80,80]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -146,7 +146,7 @@ const Skills = () => {
             </div>
 
              <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[70]}>
+              <ChangingProgressProvider values = {[10,70,70,70,70]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -160,7 +160,7 @@ const Skills = () => {
             </div>
 
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[70]}>
+              <ChangingProgressProvider values = {[5,70,70,70,70]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -174,7 +174,7 @@ const Skills = () => {
             </div>
 
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[90]}>
+              <ChangingProgressProvider values = {[10,90,90,90,90]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
@@ -188,7 +188,7 @@ const Skills = () => {
             </div>
 
             <div className = "max-sm:w-64 mx-auto">
-              <ChangingProgressProvider values = {[70]}>
+              <ChangingProgressProvider values = {[10,70,70,70,70]}>
                 {percentage => (
                   <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles ({
                     pathTransitionDuration: 0.15
