@@ -9,7 +9,7 @@ import { ConfigProvider } from 'antd';
 import { useState } from 'react'
 const Contact = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [polygonAmount, setPolygonAmount] = useState(0);
+  const [polygonAmount, setPolygonAmount] = useState();
 
   const handleOk = () => {
     setIsModalOpen(false);
@@ -45,7 +45,7 @@ const Contact = () => {
       console.log('ERROR invalid wallet addresses provided')
     await  Modal.error({
     title: 'Oops transaction failed!',
-    content: 'please double check the amount and try again',
+    content: 'Dont forget to check the Console for better underswtanding',
   
   });
       return
@@ -66,14 +66,16 @@ const Contact = () => {
     try {
   const transaction = await signer.sendTransaction(transactionParameters);
   setIsModalOpen(false);
+  await transaction.wait();
   await Modal.success({
-    title: 'Tx Success!'
+    title: 'Tx Success!',
+     content: 'Thank You So Much !!',
   });
 } catch (e) {
   console.log('failed!')
  await  Modal.error({
     title: 'Oops transaction failed!',
-    content: 'please double check the amount and try again',
+    content: 'please double check the amount  and try again ,Dont forget to check the Console for better underswtanding',
   
   });
 }
