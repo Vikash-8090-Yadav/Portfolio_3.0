@@ -13,7 +13,7 @@ const SocialLinks = () => {
           Leetcode <SiLeetcode size={30} />
         </>
       ),
-      href: "https://leetcode.com",
+      href: "https://leetcode.com/yadav621gzp/",
       style: "rounded-tr-md",
     },
     {
@@ -23,7 +23,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/vikash-kumar-yadav-8090/",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const SocialLinks = () => {
           Twitter <FaTwitter size={30} />
         </>
       ),
-      href: "https://twitter.com",
+      href: "https://twitter.com/Vikash_8090_b",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com",
+      href: "https://github.com/Vikash-8090-Yadav",
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:yadav621gzp@gmail.com",
     },
     {
       id: 6,
