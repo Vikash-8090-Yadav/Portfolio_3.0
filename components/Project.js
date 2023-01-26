@@ -18,7 +18,7 @@ const Project = () => {
           <div className = "grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:p-0">
             <div className = "shadow-white shadow-2xl rounded-t-lg">
               <div className='overflow-hidden rounded-t-lg'>
-                <Image src = "/Images/Khaana_Khazana.jpg" height="100" width="400" className = "rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" />
+                <Image src = {polygon} height="100" width="400" className = "w-full rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" />
               </div>
 
               <div className = "bg-gradient-to-b from-black to-gray-800 text-center">
@@ -42,7 +42,7 @@ const Project = () => {
 
             <div className = "shadow-white shadow-2xl rounded-t-lg">
               <div className='overflow-hidden rounded-t-lg'>
-                <Image src = "/Images/Khaana_Khazana.jpg" height="100" width="400" className = "rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" />
+                <Image src = {polygon} height="100" width="400" className = " w-full rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" />
               </div>
 
               <div className = "bg-gradient-to-b from-black to-gray-800 text-center">
@@ -66,7 +66,7 @@ const Project = () => {
 
             <div className = "shadow-white shadow-2xl rounded-t-lg">
               <div className='overflow-hidden rounded-t-lg'>
-                <Image src = "/Images/Khaana_Khazana.jpg" height="100" width="400" className = "rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" />
+                <Image src = {polygon} height="100" width="400" className = " w-full rounded-t-md duration-200 hover:scale-110 hover:overflow-hidden" />
               </div>
 
               <div className = "bg-gradient-to-b from-black to-gray-800 text-center">
