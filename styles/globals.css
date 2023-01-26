@@ -188,3 +188,71 @@ a {
 }
 
 
+.MyDiv {
+  /* Responsive margin bottom */
+  margin-bottom: 16px;
+  /* Remove margin bottom on large screens */
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+  /* Set maximum width for large screens */
+  @media (min-width: 1024px) {
+    max-width: 90%;
+    padding-right: 5%;
+  }
+}
+
+.ProjectText {
+    /* Set maximum width for medium screens */
+    max-width: 90%;
+    /* Responsive margin top */
+    @media (min-width: 1024px) {
+      margin-top: 12px;
+    }
+    /* Set margin bottom */
+    margin-bottom: 6px;
+}
+
+.text-yellow-400 {
+    /* Responsive font size */
+    font-size: 5xl;
+    /* Change font size on medium screens */
+    @media (min-width: 768px) {
+      font-size: 3xl;
+    }
+    /* Add font weight */
+    font-weight: bold;
+}
+
+/* Responsive align items and justify */
+.flex-col {
+    align-items: center;
+    justify-content: center;
+    /* Change align and justify on medium screens */
+    @media (min-width: 768px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+/* Remove leading on small screens */
+.sm:leading-none {
+    @media (max-width: 767px) {
+        leading: none;
+    }
+}
+
+/* Set maximum width for large screens */
+.max-w-lg {
+    max-width: 90%;
+    /* Add margin bottom */
+    margin-bottom: 6px;
+}
+
+/* Responsive text size */
+.text-base {
+    /* Change text size on medium screens */
+    @media (min-width: 768px) {
+        font-size: lg;
+    }
+}

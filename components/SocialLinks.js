@@ -1,5 +1,6 @@
 import React from "react";
 import {SiLeetcode} from "react-icons/si";
+import styled from "styled-components";
 import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
 import {HiOutlineMail} from "react-icons/hi";
 import {BsFillPersonLinesFill} from "react-icons/bs";
@@ -66,6 +67,7 @@ const SocialLinks = () => {
   ];
 
   return (
+    <Mydiv>
     <div className="hidden lg:flex flex-col top-[25%] left-0 fixed text-white">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
@@ -77,7 +79,17 @@ const SocialLinks = () => {
         ))}
       </ul>
     </div>
+    </Mydiv>
   );
 };
+
+
+
+const Mydiv = styled.div`
+  @media (max-width: 1182px) {
+    display: none;
+  }
+  
+`;
 
 export default SocialLinks;
