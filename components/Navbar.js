@@ -60,7 +60,7 @@ const Navbar = () => {
                     <ul className = "flex flex-col justify-center items-center text-white absolute top-0 left-0 w-full h-screen bg-gradient-to-br from-[#690a4a] via-[#100e2d] to-[#08624b] max-sm:px-1">
                     {links.map(({id, link}) => (
                         <li key = {id} className = "px-4 cursor-pointer py-6 text-2xl capitalize">
-                            <Link onClick = {() => setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
+                            <Link onClick = {() => setNav(!nav)} to={link} smooth duration={5000}>{link}</Link>
                         </li>
                     ))}
                     </ul>
