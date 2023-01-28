@@ -44,8 +44,8 @@ const Wrapper = styled.section`
   position: relative;
   .top-btn {
     font-size: 2.4rem;
-    width: 4.6rem;
-    height: 4.8rem;
+    width: 3.8rem;
+    height: 4.1rem;
     color: #11149E;
     background-color: #fff;
     
@@ -58,16 +58,16 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    &--icon {
-      animation: gototop 1.2s linear infinite alternate-reverse;
-    }
-    @keyframes gototop {
-      0% {
-        transform: translateY(-0.5rem);
-      }
-      100% {
-        transform: translateY(1rem);
-      }
+    // &--icon {
+    //   animation: gototop 1.2s linear infinite alternate-reverse;
+    // }
+    // @keyframes gototop {
+    //   0% {
+    //     transform: translateY(-0.5rem);
+    //   }
+    //   100% {
+    //     transform: translateY(1rem);
+    //   }
     }
   }
 `;
