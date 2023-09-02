@@ -1,3 +1,15 @@
+## Portfolio_3.0
+
+In this revolutionary project, we're leveraging the power of blockchain technology and NFTs to redefine the traditional resume and profile picture. Now, anyone can mint 
+my unique profile picture and resume as an NFT, which can be viewed on the https://testnets.opensea.io/ platform. 🎨📃
+But that's not all! We've also integrated a donation feature into the Dapp, allowing anyone to contribute to your success by donating Matic or any other type 
+of assets they desire. This opens up a world of opportunities for collaboration, networking, and support within our decentralized ecosystem. 💰💪
+
+
+------------------
+Improvements-
+Decentralised 1:1 mentoring or interacting calls and open NFT minting!
+
 Live - https://vikash-portfolio-3-0.vercel.app/
 <br >
 
